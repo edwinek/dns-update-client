@@ -16,18 +16,18 @@
         <apache-httpclient.version>4.5.2</apache-httpclient.version>
         <cron4j.version>2.2.5</cron4j.version>
         <hamcrest.version>2.0.0.0</hamcrest.version>
-        <jackson.version>2.5.3</jackson.version>
-        <javax.version>2.5</javax.version>
+        <jackson.version>2.9.6</jackson.version>
+        <javax.version>4.0.1</javax.version>
         <jcl.slf4j.version>1.7.21</jcl.slf4j.version>
         <joda.version>2.9.3</joda.version>
-        <junit.version>4.11</junit.version>
+        <junit.version>4.12</junit.version>
         <logback.version>1.1.7</logback.version>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.plugin.shade.version>2.4.3</maven.plugin.shade.version>
         <mockito.version>1.10.19</mockito.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.version>4.2.5.RELEASE</spring.version>
+        <spring.version>4.3.20.RELEASE</spring.version>
     </properties>
 
     <dependencies>
@@ -92,8 +92,9 @@
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
+            <artifactId>javax.servlet-api</artifactId>
             <version>${javax.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
